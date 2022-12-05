@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+{% block content%}
+<div class="container">
+   <!--Add your rows below:-->
+   <div class="row">
+      <div class="col">
+      </div>
+   </div>
+</div>
+<section class="container">
+   <div class="row">
+      <div class="col-sm-4"> <a>
+         {% if current_user.is_anonymous %}
+            <h1 class ></h1>
+            <p>Login/Register to use this product</p>
+         {% else %}
+         <form action='todos' method="get">
+            <p>
+
+            </p>
+            Todo-list – список дел и таск-менеджер № 1 в мире.
+            Он поможет вам обрести концентрацию, организованность и покой.
+            <p>
+
+            </p>
+            <p>
+               <a href="todos" class="btn btn-primary">my Todos</a>
+
+            </p>
+         </form>
+         {%endif%}
+      </div>
+   </div>
+</section>
+{% endblock %}
