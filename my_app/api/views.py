@@ -118,6 +118,7 @@ def users():
     users = User.query.all()
     print(users)
 
+
     res = {}
     for user in users:
         res = {
